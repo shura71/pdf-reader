@@ -324,7 +324,7 @@ class PDF::Reader
           glyph_width = w0 * fs
           tx = glyph_width
         else
-          glyph_width = ((w0 - (tj/1000.0)) * fs) * th
+          glyph_width = ((w0 - (tj.to_f/1000.0)) * fs) * th
           tx = glyph_width + ((tc + tw) * th)
         end
         ty = 0
